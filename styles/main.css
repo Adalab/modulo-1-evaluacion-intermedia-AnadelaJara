@@ -8,7 +8,7 @@
 .header {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -20,7 +20,7 @@
 }
 
 .nav {
-  width: 100%;
+  width: 40%;
 }
 
 .menu {
@@ -47,4 +47,23 @@
   text-align: center;
   font-family: "Rubik", sans-serif;
   text-transform: capitalize;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .menu {
+    justify-content: flex-end;
+  }
+
+  .main {
+    font-size: 40px;
+  }
 }
